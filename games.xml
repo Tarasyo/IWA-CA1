@@ -4,18 +4,18 @@
     <game>
       <name>The Legend of Zelda: Breath of the Wild</name>
       <publisher>Nintendo</publisher>
-      <release>03/03/2017</release>
+      <release>03-03-2017</release>
       <director>Hidemaro Fujibayashi</director>
-      <rank>8.0</rank>
+      <rank>8</rank>
     </game>
   </games>
   <games name="Role-playing">
     <game>
       <name>Pokémon: Let's Go, Eevee!</name>
       <publisher>Nintendo</publisher>
-      <release>16/11/2018</release>
+      <release>16-11-2018</release>
       <director>Junichi Masuda</director>
-      <rank>7.0</rank>
+      <rank>7</rank>
     </game>
   </games>
 </nintendo>

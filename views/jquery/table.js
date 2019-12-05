@@ -48,6 +48,18 @@ function delete_row(gas, ga)
 		})
 	})
 };
+function change_row(gas, ga){
+    $("#edit").click(function (){
+        $.ajax(
+            {
+            data:
+            {
+                name: result.ga.name,
+            }
+            })
+    })
+
+}
 
 $(document).ready(function ()
 {
