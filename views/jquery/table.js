@@ -20,7 +20,7 @@ function draw_table()
 
 function select_row()
 {
-	$("#menuTable tbody tr[id]").click(function ()
+	$("#table tbody tr[id]").click(function ()
 	{
 		$(".selected").removeClass("selected");
 		$(this).addClass("selected");
@@ -30,7 +30,7 @@ function select_row()
 	})
 };
 
-function delete_row(gas, ga )
+function delete_row(gas, ga)
 {
 	$("#delete").click(function ()
 	{

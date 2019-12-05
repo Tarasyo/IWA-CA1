@@ -1,21 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <nintendo>
-  <games name="adventure">
-        <game>
-            <name>The Legend of Zelda: Breath of the Wild</name>
-            <publisher>Nintendo</publisher>
-            <release>03/03/2017</release>
-            <director>Hidemaro Fujibayashi</director>
-            <rank>8.0</rank>
-        </game>
-    </games>
-    <games name="role-playing">
-        <game>
-            <name>Pokémon: Let's Go, Eevee!</name>
-            <publisher>Nintendo</publisher>
-            <release>16/11/2018</release>
-            <director>Junichi Masuda</director>
-            <rank>7.0</rank>
-        </game>
-  </games>  
+  <games name="Adventure">
+    <game>
+      <name>The Legend of Zelda: Breath of the Wild</name>
+      <publisher>Nintendo</publisher>
+      <release>03/03/2017</release>
+      <director>Hidemaro Fujibayashi</director>
+      <rank>8.0</rank>
+    </game>
+  </games>
+  <games name="Role-playing">
+    <game>
+      <name>Pokémon: Let's Go, Eevee!</name>
+      <publisher>Nintendo</publisher>
+      <release>16/11/2018</release>
+      <director>Junichi Masuda</director>
+      <rank>7.0</rank>
+    </game>
+  </games>
 </nintendo>

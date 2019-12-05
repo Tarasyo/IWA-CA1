@@ -27,7 +27,7 @@
                                     <xsl:value-of select="name" />
                                 </td>
                                 <td>
-                                    <xsl:value-of select="publishe" />
+                                    <xsl:value-of select="publisher" />
                                 </td>
                                 <td>
                                     <xsl:value-of select="release" />

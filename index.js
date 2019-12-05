@@ -86,7 +86,7 @@ router.post('/post/delete', function(req, res) {
     xmlFileToJs('games.xml', function(err, result) {
       if (err) throw (err);
       //This is where we delete the object based on the position of the section and position of the entree, as being passed on from index.html
-      delete result.nintendo.section[obj.section].game[obj.entree];
+      delete result.nintendo.games[obj.games].game[obj.game];
       //This is where we convert from JSON and write back our XML file
       jsToXmlFile('games.xml', result, function(err) {
         if (err) console.log(err);
