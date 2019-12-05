@@ -9,7 +9,7 @@
 	<title>IWA Demo App</title>
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/PaddysCafeStyles.css" rel="stylesheet">
+	<link href="css/games.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,17 +40,24 @@
 				<form enctype="application/json" action="/post/json" method="post">
 					<div class="form-group">
 						<select class="form-control" name="sec_n">
-							<option value="0">Side Dishes</option>
-							<option value="1">Breakfast</option>
-							<option value="2">Lunch</option>
-							<option value="3">Dinner</option>
+							<option value="0">Adventure</option>
+							<option value="1">Role-playing</option>
 						</select>
 					</div>
 					<div class="form-group">
-						<input class="form-control" type="text" name="item" placeholder="Item">
+						<input class="form-control" type="text" name="name" placeholder="Name">
 					</div>
 					<div class="form-group">
-						<input class="form-control" type="text" name="price" placeholder="Price">
+						<input class="form-control" type="text" name="publisher" placeholder="Publisher">
+					</div>
+                    <div class="form-group">
+						<input class="form-control" type="date" name="release" placeholder="Release Date">
+					</div>
+                    <div class="form-group">
+						<input class="form-control" type="text" name="director" placeholder="Director">
+					</div>
+                    <div class="form-group">
+						<input class="form-control" type="number" name="rank" min="1" max="10" placeholder="Rank">
 					</div>
 					<button type="submit" class="btn btn-primary btn-block">Submit</button>
 				</form>

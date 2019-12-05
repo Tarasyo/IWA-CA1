@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <nintendo>
-  <games name="Adventure">
+  <games name="adventure">
         <game>
             <name>The Legend of Zelda: Breath of the Wild</name>
             <publisher>Nintendo</publisher>
@@ -9,7 +9,7 @@
             <rank>8.0</rank>
         </game>
     </games>
-    <games name="Role-playing">
+    <games name="role-playing">
         <game>
             <name>Pokémon: Let's Go, Eevee!</name>
             <publisher>Nintendo</publisher>
