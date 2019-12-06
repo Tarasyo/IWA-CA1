@@ -25,8 +25,11 @@ function select_row()
 		$(".selected").removeClass("selected");
 		$(this).addClass("selected");
 		var games = $(this).prevAll("tr").children("td[colspan='2']").length - 1;
-		var game = $(this).attr("id") - 1;
-		delete_row(games, game);
+        var game = $(this).attr("id") - 1;
+         console.log(games, game);
+        delete_row(games, game);
+        document.getElementById('gamesID').value = games;
+        document.getElementById('gameID').value = game;
 	})
 };
 
@@ -48,19 +51,6 @@ function delete_row(gas, ga)
 		})
 	})
 };
-function change_row(gas, ga){
-    $("#edit").click(function (){
-        $.ajax(
-            {
-            data:
-            {
-                name: result.ga.name,
-            }
-            })
-    })
-
-}
-
 $(document).ready(function ()
 {
 	draw_table();

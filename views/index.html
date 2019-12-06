@@ -60,8 +60,37 @@
 					</div>
 					<button type="submit" class="btn btn-primary btn-block">Submit</button>
 				</form>
-                    <button id="edit" class="btn btn-block btn-danger">Edit</button>
+                <form enctype="application/json" action="/post/edit" method="post">
+					<div class="form-group">
+						<select class="form-control" name="sec_n">
+							<option value="0">Adventure</option>
+							<option value="1">Role-playing</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<input class="form-control" type="text" name="name" placeholder="Name">
+					</div>
+					<div class="form-group">
+						<input class="form-control" type="text" name="publisher" placeholder="Publisher">
+					</div>
+                    <div class="form-group">
+						<input class="form-control" type="date" name="release" placeholder="Release Date">
+					</div>
+                    <div class="form-group">
+						<input class="form-control" type="text" name="director" placeholder="Director">
+					</div>
+                    <div class="form-group">
+						<input class="form-control" type="number" name="rank" min="1" max="10" placeholder="Rank">
+					</div>
+                     <div class="form-group">
+						<input id="gamesID" class="form-control" type="hidden" name="games" value="" >
+					</div>
+                     <div class="form-group">
+						<input id="gameID" class="form-control" type="hidden" name="game" value="" >
+					</div>
+					<button id="edit" class="btn btn-block btn-danger">Edit</button>
                     <p class="text-muted">To Change an entree, click the required row first</p>
+				</form>
                     <button id="delete" class="btn btn-block btn-danger">Delete</button>
                     <p class="text-muted">To delete an entree, click the required row first</p>
 			</div>

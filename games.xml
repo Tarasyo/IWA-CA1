@@ -8,6 +8,27 @@
       <director>Hidemaro Fujibayashi</director>
       <rank>8</rank>
     </game>
+    <game>
+      <name>Taras</name>
+      <publisher>Taras Company</publisher>
+      <release>2019-12-01</release>
+      <director>atras</director>
+      <rank>1</rank>
+    </game>
+    <game>
+      <name>t</name>
+      <publisher>t</publisher>
+      <release>2019-11-30</release>
+      <director>t</director>
+      <rank>1</rank>
+    </game>
+    <game>
+      <name>Taras</name>
+      <publisher>Taras Company</publisher>
+      <release>2019-11-29</release>
+      <director>LOL</director>
+      <rank>1</rank>
+    </game>
   </games>
   <games name="Role-playing">
     <game>

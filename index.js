@@ -99,6 +99,31 @@ router.post('/post/delete', function(req, res) {
   deleteJSON(req.body);
 
 });
+router.post('/post/edit', function(req, res) {
+
+  // Function to read in a JSON file, add to it & convert to XML
+  function editJSON(obj) {
+      console.log(obj);
+    // Function to read in XML file, convert it to JSON, add a new object and write back to XML file
+    xmlFileToJs('games.xml', function(err, result) {
+      if (err) throw (err);
+      //This is where you pass on information from the form inside index.html in a form of JSON and navigate through our JSON (XML) file to create a new entree object
+      result.nintendo.games[obj.games].game[obj.game] = {'name': obj.name, 'publisher': obj.publisher, 'release': obj.release, 'director': obj.director, 'rank': obj.rank}; //If your XML elements are differet, this is where you have to change to your own element names
+      //Converting back to our original XML file from JSON
+      jsToXmlFile('games.xml', result, function(err) {
+        if (err) console.log(err);
+      })
+    })
+  };
+
+  // Call appendJSON function and pass in body of the current POST request
+  editJSON(req.body);
+
+  // Re-direct the browser back to the page, where the POST request came from
+  res.redirect('back');
+
+});
+
 
 //This is where we as the server to be listening to user with a specified IP and Port
 server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function() {
