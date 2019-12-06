@@ -9,24 +9,10 @@
       <rank>8</rank>
     </game>
     <game>
-      <name>Taras</name>
-      <publisher>Taras Company</publisher>
+      <name>1</name>
+      <publisher>1</publisher>
       <release>2019-12-01</release>
-      <director>atras</director>
-      <rank>1</rank>
-    </game>
-    <game>
-      <name>t</name>
-      <publisher>t</publisher>
-      <release>2019-11-30</release>
-      <director>t</director>
-      <rank>1</rank>
-    </game>
-    <game>
-      <name>Taras</name>
-      <publisher>Taras Company</publisher>
-      <release>2019-11-29</release>
-      <director>LOL</director>
+      <director>1</director>
       <rank>1</rank>
     </game>
   </games>
