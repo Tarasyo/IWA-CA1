@@ -1,3 +1,6 @@
+//THE MAIN STRUCTURE OF THE CODE WAS TAKING FROM https://github.com/mikhail-cct/CA1-In-class-Demo
+
+
 var http = require('http'), //This module provides the HTTP server functionalities
     path = require('path'), //The path module provides utilities for working with file and directory paths
     express = require('express'), //This module allows this app to respond to HTTP Requests, defines the routing and renders back the required content
@@ -99,11 +102,12 @@ router.post('/post/delete', function(req, res) {
   deleteJSON(req.body);
 
 });
+//POST request to edit JSON & XML files
 router.post('/post/edit', function(req, res) {
 
-  
+  // Function to read in a JSON file, add to it & convert to XML
   function editJSON(obj) {
-      console.log(obj);
+      //console.log(obj);
     // Function to read in XML file, convert it to JSON, add a new object and write back to XML file
     xmlFileToJs('games.xml', function(err, result) {
       if (err) throw (err);

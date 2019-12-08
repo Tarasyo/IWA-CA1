@@ -1,3 +1,4 @@
+<!--THE MAIN STRUCTURE OF THE CODE WAS TAKING FROM https://github.com/mikhail-cct/CA1-In-class-Demo-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,10 +39,10 @@
 			<div id="results" class="col-lg-8 text-center order-3"></div>
 			<div class="col-lg-4 text-center order-2">
              <div class="tab">
-            <button class="tablinks" onclick="opentab(event, 'Customer')" id="defaultOpen"><b>Customer</b></button>
-            <button class="tablinks" onclick="opentab(event, 'Barber')"><b>Barber</b></button>
+            <button class="tablinks" onclick="opentab(event, 'Add')" id="defaultOpen"><b>Add</b></button>
+            <button class="tablinks" onclick="opentab(event, 'Edit')"><b>Edit</b></button>
             </div>
-                 <div id="Customer" class="tabcontent">
+                 <div id="Add" class="tabcontent">
 				<form enctype="application/json" action="/post/json" method="post">
 					<div class="form-group">
 						<select class="form-control" name="sec_n">
@@ -67,7 +68,7 @@
 					<button type="submit" class="btn btn-primary btn-block">Submit</button>
 				</form>
                 </div>
-                <div id="Barber" class="tabcontent">
+                <div id="Edit" class="tabcontent">
                 <form enctype="application/json" action="/post/edit" method="post">
 					<div class="form-group">
 						<select class="form-control" name="sec_n">
