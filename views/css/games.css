@@ -3,8 +3,18 @@ html {
   min-height: 100%;
 }
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+   color: black;
+  text-align: left;
+  padding: 18% 24%;
+  border-top: 10px solid #80bfff;
+  margin: 105px 0 60px;
+  background: linear-gradient(#80bfff, transparent 40%),
+     linear-gradient(0deg, #fff, transparent),
+     #ffa949 url('../img/nintendo.jpg') no-repeat center;
+  background-size: cover;
+  box-shadow: inset 0 0 50px 10px rgba(0,0,0, .8);
+  border-radius: 10%;
+  font: bold;
 }
 .footer {
   position: absolute;
@@ -19,13 +29,14 @@ table, th, td {
      border-collapse: collapse;
      border: 1px solid black;
      text-align: center;
+     list-style: square;
 }
  table {
      border-collapse: collapse;
      width:100%;
 }
  td, th {
-     border: 1px solid #ced4da;
+     border: 1px solid black;
      padding: 0.5rem;
      text-align: left;
 }
@@ -33,6 +44,27 @@ table, th, td {
      font-weight: bold;
 }
 .selected {
-            background-color: #dc3545;
+            background-color: #FFFF00;
             color: #FFF;
+}
+nav {
+ text-align:center;
+ padding: 10px 0;
+ margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a { 
+  font-weight: 800;
+  padding: 15px 10px;
+  
 }

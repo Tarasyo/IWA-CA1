@@ -25,4 +25,13 @@
       <rank>7</rank>
     </game>
   </games>
+  <games name="Sports">
+        <game>
+            <name>Mario and Sonic at the Olympic Games Tokyo 2020</name>
+            <publisher>Sega</publisher>
+            <release>2019-11-08</release>
+            <director>Naohiro Hirao</director>
+            <rank>8</rank>
+        </game>
+  </games>
 </nintendo>

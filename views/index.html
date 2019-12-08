@@ -22,9 +22,6 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active"><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
-					<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -39,8 +36,8 @@
 			<div id="results" class="col-lg-8 text-center order-3"></div>
 			<div class="col-lg-4 text-center order-2">
              <div class="tab">
-            <button class="tablinks" onclick="opentab(event, 'Add')" id="defaultOpen"><b>Add</b></button>
-            <button class="tablinks" onclick="opentab(event, 'Edit')"><b>Edit</b></button>
+            <button class="btn btn-info btn-block" onclick="opentab(event, 'Add')" id="defaultOpen"><b>Add</b></button>
+            <button class="btn btn-info btn-block" onclick="opentab(event, 'Edit')"><b>Edit</b></button>
             </div>
                  <div id="Add" class="tabcontent">
 				<form enctype="application/json" action="/post/json" method="post">
@@ -48,6 +45,7 @@
 						<select class="form-control" name="sec_n">
 							<option value="0">Adventure</option>
 							<option value="1">Role-playing</option>
+                            <option value="2">Sports</option>
 						</select>
 					</div>
 					<div class="form-group">
@@ -66,6 +64,7 @@
 						<input class="form-control" type="number" name="rank" min="1" max="10" placeholder="Rank">
 					</div>
 					<button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    <p class="text-muted">To Add an entree, click here</p>
 				</form>
                 </div>
                 <div id="Edit" class="tabcontent">
@@ -74,6 +73,7 @@
 						<select class="form-control" name="sec_n">
 							<option value="0">Adventure</option>
 							<option value="1">Role-playing</option>
+                            <option value="2">Sports</option>
 						</select>
 					</div>
 					<div class="form-group">
@@ -97,8 +97,8 @@
                      <div class="form-group">
 						<input id="gameID" class="form-control" type="hidden" name="game" value="" >
 					</div>
-					<button id="edit" class="btn btn-block btn-danger">Edit</button>
-                    <p class="text-muted">To Change an entree, click the required row first</p>
+					<button id="edit" class="btn btn-warning btn-block">Edit</button>
+                    <p class="text-muted">Click the required row first</p>
 				</form>
                 </div>
                     <button id="delete" class="btn btn-block btn-danger">Delete</button>
