@@ -5,10 +5,12 @@ College assignment
 The app
 This web application main functionality is read, delete, upload, update and is
 developed using the gitpod online IDE and stored using the Github platform.
+
 What it does
 The purpose of this web application is to store data about Nintendo Switch
 game. All games have main information like: name of the game, publisher, release,
 director, and rank.
+
 Modules utilized
 Modules that was installed to support all functionality :
 ● http - module which allows Node.js to transfer data over the Hyper
@@ -22,6 +24,7 @@ applications;
 ● expAutoSan - module to make control on the user uploads and
 updates.
 ● xsltProcess - functions and variables to perform XSL transformations.
+
 Project Structure
 The project structure could be find below:
 -backend/
@@ -41,6 +44,7 @@ The project structure could be find below:
 --index.js
 --games.xml
 --games.xsl
+
 
 Add new record
 In the left side of the page have to buttons in the top of application forms add
